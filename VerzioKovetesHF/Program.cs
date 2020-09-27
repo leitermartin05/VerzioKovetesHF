@@ -28,6 +28,9 @@ namespace VerzioKovetesHF
             }
             atlag = atlag / 10;
             Console.WriteLine("A számok átlaga: "+atlag);
+
+            Console.WriteLine("A legnagyobb szám a(z) {0}, a legkisebb pedig a(z) {1}",tomb.Max(),tomb.Min());
+            
         }
 
         
