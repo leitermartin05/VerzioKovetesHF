@@ -13,10 +13,18 @@ namespace VerzioKovetesHF
             int[] tomb = new int[10];
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Klrem, adjon megy egy számot: ");
+                Console.WriteLine("Kérem, adjon megy egy számot: ");
                 tomb[i]= Convert.ToInt32(Console.ReadLine());
 
             }
+
+            int atlag=0;
+            for (int i = 0; i < 10; i++)
+            {
+                atlag += tomb[i];
+            }
+            atlag = atlag / 10;
+            Console.WriteLine("A számok átlaga: "+atlag);
         }
 
         
