@@ -10,8 +10,11 @@ namespace VerzioKovetesHF
     {
         static void Main(string[] args)
         {
-            int[] tomb = new int[10];
-            for (int i = 0; i < 10; i++)
+            int mennyi;
+            Console.WriteLine("Adja meg, hány számot szeretne megadni: ");
+            mennyi = Convert.ToInt32(Console.ReadLine());
+            int[] tomb = new int[mennyi];
+            for (int i = 0; i < mennyi; i++)
             {
                 Console.WriteLine("Kérem, adjon megy egy számot: ");
                 tomb[i]= Convert.ToInt32(Console.ReadLine());
@@ -19,7 +22,7 @@ namespace VerzioKovetesHF
             }
 
             int atlag=0;
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < mennyi; i++)
             {
                 atlag += tomb[i];
             }
