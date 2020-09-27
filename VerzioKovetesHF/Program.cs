@@ -26,7 +26,7 @@ namespace VerzioKovetesHF
             {
                 atlag += tomb[i];
             }
-            atlag = atlag / 10;
+            atlag = atlag / mennyi;
             Console.WriteLine("A számok átlaga: "+atlag);
 
             Console.WriteLine("A legnagyobb szám a(z) {0}, a legkisebb pedig a(z) {1}",tomb.Max(),tomb.Min());
